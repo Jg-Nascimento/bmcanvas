@@ -1,5 +1,25 @@
 @import 'bootstrap.min.scss';
 
-body {
-  background: red;
+$width-colunas: 20%;
+$height-colunas-gr: 600px;
+$height-colunas-pq: 300px;
+
+.coluna {
+  width: $width-colunas;
+  height: $height-colunas-gr;
+  float: left;
+  border-top: 2px dashed black;
+  border-bottom: 2px dashed black;
+  border-right: 2px dashed black;
+  &:first-child {
+    border-left: 2px dashed black;
+  }
+}
+
+.col-peq {
+  height: $height-colunas-pq;
+  border-bottom: 2px dashed black;
+  &:nth-child(2){
+  border-bottom: 0;
+  }
 }

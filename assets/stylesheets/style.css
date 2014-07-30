@@ -5191,5 +5191,18 @@ button.close {
 @media print {
   .hidden-print {
     display: none !important; } }
-body {
-  background: red; }
+.coluna {
+  width: 20%;
+  height: 600px;
+  float: left;
+  border-top: 2px dashed black;
+  border-bottom: 2px dashed black;
+  border-right: 2px dashed black; }
+  .coluna:first-child {
+    border-left: 2px dashed black; }
+
+.col-peq {
+  height: 300px;
+  border-bottom: 2px dashed black; }
+  .col-peq:nth-child(2) {
+    border-bottom: 0; }
