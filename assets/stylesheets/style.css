@@ -5200,6 +5200,8 @@ button.close {
   border-right: 2px dashed black; }
   .coluna:first-child {
     border-left: 2px dashed black; }
+  .coluna h1 {
+    font-size: 16px; }
 
 .col-peq {
   height: 300px;
