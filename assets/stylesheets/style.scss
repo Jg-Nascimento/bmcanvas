@@ -11,15 +11,13 @@ $height-colunas-pq: 305px;
   box-sizing: border-box;
 }
 
+
+// BOX
+
 .centralizar {
   margin-left: auto;
   margin-right: auto;
   display: block;
-}
-
-body {
-  font-family: "Open Sans", tahoma;
-  background: #F5F5F5;
 }
 
 .container {
@@ -33,15 +31,6 @@ section.board {
   @extend .centralizar;
 }
 
-.graph_icon {
-  right: 10px;
-  top: 25px;
-  width: 73px;
-  height: 70px;
-  background: url(../images/icons.png) no-repeat 0 0;
-  position: absolute;
-}
-
 .parceiros-chave,
 .colun2,
 .proposta-de-valor,
@@ -51,20 +40,11 @@ section.board {
   width: $width-colunas;
   height: $height-colunas-gr;
   float: left;
-  box-shadow: 0 1px 20px rgba(0,0,0,0.2);
+  box-shadow: 1px 2px 2px rgba(0,0,0,0.2);
   margin: 5px;
   background: #fff;
   border: 1px solid #cdcdcd;
-}
-
-h1.title-board {
-  font-size: 16px;
-  width: 155px;
-  font-weight: bold;
-  padding-top: 16px;
-  padding-left: 15px;
-  font-weight: 400;
-  line-height: 22px;
+  border-top: 2px solid #333;
 }
 
 .colun2,
@@ -73,6 +53,48 @@ h1.title-board {
   box-shadow: none;
   border: none;
 }
+
+.col-peq {
+  height: $height-colunas-pq;
+  position: relative;
+  box-shadow: 1px 2px 2px rgba(0,0,0,0.2);
+  margin-bottom: 30px;
+  background: #fff;
+  border: 1px solid #cdcdcd;
+  border-top: 2px solid #333;
+}
+
+.estrutura-custo,
+.fluxo-receita {
+  margin: 5px;
+  float: left;
+  width: 587px;
+  min-height: 200px;
+  background: #fff;
+  position: relative;
+  border: 1px solid #cdcdcd;
+  border-top: 2px solid #333;
+  box-shadow: 1px 2px 2px rgba(0,0,0,0.2);
+}
+
+.recursos-chave,
+.canais {
+  margin-top: -20px;
+}
+
+// END BOX
+
+// ICONES BOARDS
+
+.graph_icon {
+  right: 10px;
+  top: 25px;
+  width: 73px;
+  height: 70px;
+  background: url(../images/icons.png) no-repeat 0 0;
+  position: absolute;
+}
+
 
 .atividade-chave {
   .graph_icon { background-position: 0 -63px; }
@@ -106,31 +128,26 @@ h1.title-board {
   .graph_icon { background-position: 0 -540px; }
 }
 
-.recursos-chave,
-.canais {
-  margin-top: -20px;
+// FIM ICONS BOARDS
+
+body {
+  font-family: "Open Sans", tahoma;
+  background: #F5F5F5;
 }
 
-.col-peq {
-  height: $height-colunas-pq;
-  position: relative;
-  box-shadow: 0 1px 20px rgba(0,0,0,0.2);
-  margin-bottom: 30px;
-  background: #fff;
-  border: 1px solid #cdcdcd;
+h1.title-board {
+  font-size: 16px;
+  width: 155px;
+  font-weight: bold;
+  padding-top: 16px;
+  padding-left: 15px;
+  font-weight: 400;
+  line-height: 22px;
 }
+
 
 .estrutura-custo,
 .fluxo-receita {
-  margin: 5px;
-  float: left;
-  width: 587px;
-  min-height: 200px;
-  background: #fff;
-  position: relative;
-  border: 1px solid #cdcdcd;
-  box-shadow: 0 1px 20px rgba(0,0,0,0.2);
-  
   h1 {
     width: 200px;
   }
@@ -139,25 +156,6 @@ h1.title-board {
 .fluxo-receita {
   width: 588px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
