@@ -1,29 +1,163 @@
 @import 'bootstrap.min.scss';
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700,300);
 
-$width-colunas: 20%;
-$height-colunas-gr: 600px;
-$height-colunas-pq: 300px;
+$width-colunas: 19.1%;
+$height-colunas-gr: 620px;
+$height-colunas-pq: 305px;
 
-.coluna {
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.centralizar {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+body {
+  font-family: "Open Sans", tahoma;
+  background: #F5F5F5;
+}
+
+.container {
+  width: 1200px;
+  padding: 0;
+}
+
+section.board {
+  margin-top: 30px;
+  width: 1200px;
+  @extend .centralizar;
+}
+
+.graph_icon {
+  right: 10px;
+  top: 25px;
+  width: 73px;
+  height: 70px;
+  background: url(../images/icons.png) no-repeat 0 0;
+  position: absolute;
+}
+
+.parceiros-chave,
+.colun2,
+.proposta-de-valor,
+.colun4,
+.segmentos-de-clientes {
+  position: relative;
   width: $width-colunas;
   height: $height-colunas-gr;
   float: left;
-  border-top: 2px dashed black;
-  border-bottom: 2px dashed black;
-  border-right: 2px dashed black;
-  &:first-child {
-    border-left: 2px dashed black;
-  }
-  
-  h1 {
-    font-size: 16px;
-  }
+  box-shadow: 0 1px 20px rgba(0,0,0,0.2);
+  margin: 5px;
+  background: #fff;
+  border: 1px solid #cdcdcd;
+}
+
+h1.title-board {
+  font-size: 16px;
+  width: 155px;
+  font-weight: bold;
+  padding-top: 16px;
+  padding-left: 15px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.colun2,
+.colun4 {
+  background: none;
+  box-shadow: none;
+  border: none;
+}
+
+.atividade-chave {
+  .graph_icon { background-position: 0 -63px; }
+}
+
+.proposta-de-valor {
+  .graph_icon { background-position: 0 -131px; }
+}
+
+.relacionamento-clientes{
+  .graph_icon { background-position: 0 -198px; }
+}
+
+.segmentos-de-clientes{
+  .graph_icon { background-position: 0 -264px; }
+}
+
+.recursos-chave{
+  .graph_icon { background-position: 0 -334px; }
+}
+
+.canais{
+  .graph_icon { background-position: 0 -402px; }
+}
+
+.estrutura-custo{
+  .graph_icon { background-position: 0 -470px; }
+}
+
+.fluxo-receita{
+  .graph_icon { background-position: 0 -540px; }
+}
+
+.recursos-chave,
+.canais {
+  margin-top: -20px;
 }
 
 .col-peq {
   height: $height-colunas-pq;
-  border-bottom: 2px dashed black;
-  &:nth-child(2){
-  border-bottom: 0;
+  position: relative;
+  box-shadow: 0 1px 20px rgba(0,0,0,0.2);
+  margin-bottom: 30px;
+  background: #fff;
+  border: 1px solid #cdcdcd;
+}
+
+.estrutura-custo,
+.fluxo-receita {
+  margin: 5px;
+  float: left;
+  width: 587px;
+  min-height: 200px;
+  background: #fff;
+  position: relative;
+  border: 1px solid #cdcdcd;
+  box-shadow: 0 1px 20px rgba(0,0,0,0.2);
+  
+  h1 {
+    width: 200px;
   }
 }
+
+.fluxo-receita {
+  width: 588px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
