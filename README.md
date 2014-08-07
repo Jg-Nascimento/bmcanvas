@@ -1,4 +1,6 @@
 bmcanvas
 ========
 
-Aplicativo Business Model Canvas
+Business Model Canvas
+
+preview: http://jgcardoso.github.io/bmcanvas/
