@@ -1,5 +1,6 @@
 @import 'bootstrap.min.scss';
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,300,700);
+@import url(http://fonts.googleapis.com/css?family=Gloria+Hallelujah);
 
 $width-colunas: 19.1%;
 $height-colunas-gr: 620px;
@@ -167,10 +168,13 @@ div.post-its {
   width: 160px;
   height: 160px;
   position: relative;
+  font-size: 18px;
+  padding: 10px;
   z-index: 9;
   background-color:  #ffeb3b;
   box-shadow: 1px 2px 1px rgba(0,0,0,0.4);
   @extend .centralizar;
+  font-family: 'Gloria Hallelujah';
 }
 
 // FIM POST-ITS
@@ -201,6 +205,3 @@ h1.title-board {
 .fluxo-receita {
   width: 588px;
 }
-
-
-
