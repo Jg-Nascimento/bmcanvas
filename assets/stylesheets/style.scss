@@ -166,7 +166,7 @@ p.description-bl {
 
 div.post-its {
   width: 160px;
-  height: 160px;
+  min-height: 20px;
   position: relative;
   font-size: 18px;
   padding: 10px;
@@ -176,11 +176,6 @@ div.post-its {
   box-shadow: 1px 2px 1px rgba(0,0,0,0.4);
   @extend .centralizar;
   font-family: 'Gloria Hallelujah';
-  
-  p {
-    position: relative;
-    z-index: 9;
-  }
 }
 
 // FIM POST-ITS
