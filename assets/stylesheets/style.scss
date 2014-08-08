@@ -1,5 +1,5 @@
 @import 'bootstrap.min.scss';
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700,300);
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,300,700);
 
 $width-colunas: 19.1%;
 $height-colunas-gr: 620px;
@@ -25,6 +25,17 @@ $height-colunas-pq: 305px;
   padding: 0;
 }
 
+header.top {
+  background:  #03a9f4;
+  width: 100%;
+  padding: 60px 0 0 0;
+  color: #fff;
+  
+  h1 {
+    font-size: 64px;
+  }
+}
+
 section.board {
   margin-top: 30px;
   width: 1200px;
@@ -42,7 +53,7 @@ section.board {
   float: left;
   box-shadow: 1px 2px 2px rgba(0,0,0,0.2);
   margin: 5px;
-  background: #fff;
+  background: #FAFAFA;
   border: 1px solid #cdcdcd;
   border-top: 2px solid #333;
 }
@@ -59,7 +70,7 @@ section.board {
   position: relative;
   box-shadow: 1px 2px 2px rgba(0,0,0,0.2);
   margin-bottom: 30px;
-  background: #fff;
+  background: #FAFAFA;
   border: 1px solid #cdcdcd;
   border-top: 2px solid #333;
 }
@@ -70,7 +81,7 @@ section.board {
   float: left;
   width: 587px;
   min-height: 200px;
-  background: #fff;
+  background: #FAFAFA;
   position: relative;
   border: 1px solid #cdcdcd;
   border-top: 2px solid #333;
@@ -131,8 +142,8 @@ section.board {
 // FIM ICONS BOARDS
 
 body {
-  font-family: "Open Sans", tahoma;
-  background: #F5F5F5;
+  font-family: Roboto, tahoma;
+  background: #EEEEEF;
 }
 
 h1.title-board {
