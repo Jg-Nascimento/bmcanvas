@@ -148,6 +148,15 @@ p.description-bl {
   font-size: 11px;
   padding: 20px;
   color: #aaa;
+  position: absolute;
+  top: 80px;
+}
+
+.estrutura-custo,
+.fluxo-receita {
+  p.description-bl {
+    top: 60px;
+  }
 }
 
 // FIM PARAGRAFOS E FONTES
