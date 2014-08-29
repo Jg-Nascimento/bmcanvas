@@ -1,0 +1,23 @@
+{
+  "name": "bmcanvas",
+  "version": "1.0.0",
+  "description": "bmcanvas\r ========",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jgcardoso/bmcanvas.git"
+  },
+  "author": "Jonas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jgcardoso/bmcanvas/issues"
+  },
+  "homepage": "https://github.com/jgcardoso/bmcanvas",
+  "devDependencies": {
+    "gulp": "^3.8.7",
+    "gulp-livereload": "^2.1.1"
+  }
+}
