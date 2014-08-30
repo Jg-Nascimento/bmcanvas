@@ -1,99 +1,44 @@
+function organizeHeight(el) {
+  if ( $(el).parents('.first-row').length == 1 ) {
+    var maiorAltura = 0;
+    $.each( $('.first-row').children() , function(index, val) {
+      var altura = $(val).outerHeight();
+      if ( altura > maiorAltura ) {
+        maiorAltura = altura;
+      }
+      if ((index + 1) == $('.first-row').children().length) {
+        console.log(maiorAltura);
+        $('.first-row > div').animate({'min-height': maiorAltura}, 500);
+      }
+    });
+  } else if ( $(el).parents('.second-row').length == 1 ) {
+    var maiorAltura = 0;
+    $.each( $('.second-row').children() , function(index, val) {
+      var altura = $(val).outerHeight();
+      if ( altura > maiorAltura ) {
+      maiorAltura = altura;
+      }
+      if ((index + 1) == $('.second-row').children().length) {
+        console.log(maiorAltura);
+        $('.second-row > div').animate({'min-height': maiorAltura}, 500);
+      }
+    });
+  }
+}
 
 $(document).ready(function(){
 
-  $(".parceiros-chave .criar").click(function(){
+  // CRIA OS POST-ITS
+  $(".criar").click(function(){
     var div = $("<textarea/>", {
       contenteditable:"true",
       class:"post-its",
       onkeyup:"autoGrow(this)",
       placeholder:"Novo post-it"
     });
-    $(".parceiros-chave").append(div);
+    $(this).parent().append(div);
+    organizeHeight(this);
   });
-
-
-  $(".proposta-de-valor .criar").click(function(){
-    var div = $("<textarea/>", {
-      contenteditable:"true",
-      class:"post-its",
-      onkeyup:"autoGrow(this)",
-      placeholder:"Novo post-it"
-    });
-    $(".proposta-de-valor").append(div);
-  });
-
-  $(".atividade-chave .criar").click(function(){
-    var div = $("<textarea/>", {
-      contenteditable:"true",
-      class:"post-its",
-      onkeyup:"autoGrow(this)",
-      placeholder:"Novo post-it"
-    });
-    $(".atividade-chave").append(div);
-  });
-
-  $(".recursos-chave .criar").click(function(){
-    var div = $("<textarea/>", {
-      contenteditable:"true",
-      class:"post-its",
-      onkeyup:"autoGrow(this)",
-      placeholder:"Novo post-it"
-    });
-    $(".recursos-chave").append(div);
-  });
-
-  $(".relacionamento-clientes .criar").click(function(){
-    var div = $("<textarea/>", {
-      contenteditable:"true",
-      class:"post-its",
-      onkeyup:"autoGrow(this)",
-      placeholder:"Novo post-it"
-    });
-    $(".relacionamento-clientes").append(div);
-  });
-
-  $(".canais .criar").click(function(){
-    var div = $("<textarea/>", {
-      contenteditable:"true",
-      class:"post-its",
-      onkeyup:"autoGrow(this)",
-      placeholder:"Novo post-it"
-    });
-    $(".canais").append(div);
-  });
-
-  $(".segmentos-de-clientes .criar").click(function(){
-    var div = $("<textarea/>", {
-      contenteditable:"true",
-      class:"post-its",
-      onkeyup:"autoGrow(this)",
-      placeholder:"Novo post-it"
-    });
-    $(".segmentos-de-clientes").append(div);
-  });
-
-  $(".estrutura-custo .criar").click(function(){
-    var div = $("<textarea/>", {
-      contenteditable:"true",
-      class:"post-its",
-      onkeyup:"autoGrow(this)",
-      placeholder:"Novo post-it"
-    });
-    $(".estrutura-custo").append(div);
-  });
-
-  $(".fluxo-receita .criar").click(function(){
-    var div = $("<textarea/>", {
-      contenteditable:"true",
-      class:"post-its",
-      onkeyup:"autoGrow(this)",
-      placeholder:"Novo post-it"
-    });
-    $(".fluxo-receita").append(div);
-  });
-
-  
- 
 });
 
 
