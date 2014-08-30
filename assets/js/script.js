@@ -1,19 +1,100 @@
+
 $(document).ready(function(){
-  
-  $(".proposta-de-valor .criar").click(function(){
-    var div = $("<div/>", {
-      class:"post-its",
-      contenteditable:"true"
-    }).append("Novo Post-it");
-    $(".proposta-de-valor").append(div);
-  });
 
   $(".parceiros-chave .criar").click(function(){
-    var div = $("<div/>", {
+    var div = $("<textarea/>", {
+      contenteditable:"true",
       class:"post-its",
-      contenteditable:"true"
-    }).append("Novo Post-it");
+      onkeyup:"autoGrow(this)",
+      placeholder:"Novo post-it"
+    });
     $(".parceiros-chave").append(div);
   });
 
+
+  $(".proposta-de-valor .criar").click(function(){
+    var div = $("<textarea/>", {
+      contenteditable:"true",
+      class:"post-its",
+      onkeyup:"autoGrow(this)",
+      placeholder:"Novo post-it"
+    });
+    $(".proposta-de-valor").append(div);
+  });
+
+  $(".atividade-chave .criar").click(function(){
+    var div = $("<textarea/>", {
+      contenteditable:"true",
+      class:"post-its",
+      onkeyup:"autoGrow(this)",
+      placeholder:"Novo post-it"
+    });
+    $(".atividade-chave").append(div);
+  });
+
+  $(".recursos-chave .criar").click(function(){
+    var div = $("<textarea/>", {
+      contenteditable:"true",
+      class:"post-its",
+      onkeyup:"autoGrow(this)",
+      placeholder:"Novo post-it"
+    });
+    $(".recursos-chave").append(div);
+  });
+
+  $(".relacionamento-clientes .criar").click(function(){
+    var div = $("<textarea/>", {
+      contenteditable:"true",
+      class:"post-its",
+      onkeyup:"autoGrow(this)",
+      placeholder:"Novo post-it"
+    });
+    $(".relacionamento-clientes").append(div);
+  });
+
+  $(".canais .criar").click(function(){
+    var div = $("<textarea/>", {
+      contenteditable:"true",
+      class:"post-its",
+      onkeyup:"autoGrow(this)",
+      placeholder:"Novo post-it"
+    });
+    $(".canais").append(div);
+  });
+
+  $(".segmentos-de-clientes .criar").click(function(){
+    var div = $("<textarea/>", {
+      contenteditable:"true",
+      class:"post-its",
+      onkeyup:"autoGrow(this)",
+      placeholder:"Novo post-it"
+    });
+    $(".segmentos-de-clientes").append(div);
+  });
+
+  $(".estrutura-custo .criar").click(function(){
+    var div = $("<textarea/>", {
+      contenteditable:"true",
+      class:"post-its",
+      onkeyup:"autoGrow(this)",
+      placeholder:"Novo post-it"
+    });
+    $(".estrutura-custo").append(div);
+  });
+
+  $(".fluxo-receita .criar").click(function(){
+    var div = $("<textarea/>", {
+      contenteditable:"true",
+      class:"post-its",
+      onkeyup:"autoGrow(this)",
+      placeholder:"Novo post-it"
+    });
+    $(".fluxo-receita").append(div);
+  });
+
+  
+ 
 });
+
+
+

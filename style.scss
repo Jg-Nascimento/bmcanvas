@@ -50,7 +50,7 @@ section.board {
 .segmentos-de-clientes {
   position: relative;
   width: $width-colunas;
-  height: $height-colunas-gr;
+  min-height: $height-colunas-gr;
   float: left;
   box-shadow: 1px 2px 2px rgba(0,0,0,0.2);
   margin: 5px;
@@ -67,7 +67,7 @@ section.board {
 }
 
 .col-peq {
-  height: $height-colunas-pq;
+  min-height: $height-colunas-pq;
   position: relative;
   box-shadow: 1px 2px 2px rgba(0,0,0,0.2);
   margin-bottom: 30px;
@@ -162,27 +162,67 @@ p.description-bl {
 
 // POST-ITS
 
-div.post-its {
-  width: 160px;
-  min-height: 20px;
+textarea.post-its {
+  min-height: 30px;
   position: relative;
-  font-size: 18px;
-  margin-bottom: 10px;
-  padding: 10px;
   z-index: 8;
+  margin-bottom: 10px;
   top: 15px;
-  background-color:  #ffeb3b;
+  width: 160px;
+  max-width: 160px;
+  overflow: hidden;
+  font-size: 15px;
+  display: block;
+  resize: none;
+  padding: 10px;
+  background-color:  #FFEB3B;
   box-shadow: 1px 2px 1px rgba(0,0,0,0.4);
   @extend .centralizar;
   font-family: 'Gloria Hallelujah';
 }
 
+textarea::-webkit-input-placeholder { /* WebKit browsers */
+  color: #000;
+}
+textarea:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  color: #000;
+}
+textarea::-moz-placeholder { /* Mozilla Firefox 19+ */
+  color: #000;
+}
+textarea:-ms-input-placeholder { /* Internet Explorer 10+ */
+  color: #000;
+}
+
 div.criar {
+  position: relative;
+
   a{
-    width: 20px;
-    height: 20px;
-    background: blue;
+    top: -15px;
+    left: 20px;
+    width: 30px;
+    height: 30px;
     position: absolute;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.4);
+    border: 1px solid rgba(255,255,255,0.4);
+    border-radius: 50%;
+    background: rgb(244,244,244); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(244,244,244,1) 0%, rgba(226,226,226,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(244,244,244,1)), color-stop(100%,rgba(226,226,226,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(244,244,244,1) 0%,rgba(226,226,226,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(244,244,244,1) 0%,rgba(226,226,226,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(244,244,244,1) 0%,rgba(226,226,226,1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(244,244,244,1) 0%,rgba(226,226,226,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4f4f4', endColorstr='#e2e2e2',GradientType=0 ); /* IE6-9 */
+
+    &:after {
+      position: absolute;
+      top: -4px;
+      left: 7px;
+      content: "+";
+      color: #FF975E;
+      font-size: 25px;
+    }
   }
 }
 
