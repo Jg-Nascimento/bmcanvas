@@ -1,3 +1,4 @@
+@charset "CP850";
 /*!
  * Bootstrap v3.2.0 (http://getbootstrap.com)
  * Copyright 2011-2014 Twitter, Inc.
@@ -5397,14 +5398,11 @@ h1.title-board {
 .fluxo-receita {
   width: 588px; }
 
-
 /* MODIFICADO POR MÁRIO VALNEY */
-
 .fist-row,
 .second-row {
   overflow: hidden;
-  padding-top: 10px;
-}
+  padding-top: 10px; }
 
 .estrutura-custo,
 .fluxo-receita,
@@ -5415,5 +5413,4 @@ h1.title-board {
 .relacionamento-clientes,
 .canais,
 .segmentos-de-clientes {
-  padding-bottom: 20px;
-}
+  padding-bottom: 20px; }

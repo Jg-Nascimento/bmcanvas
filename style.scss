@@ -254,3 +254,25 @@ h1.title-board {
 .fluxo-receita {
   width: 588px;
 }
+
+
+
+/* MODIFICADO POR MÁRIO VALNEY */
+
+.fist-row,
+.second-row {
+  overflow: hidden;
+  padding-top: 10px;
+}
+
+.estrutura-custo,
+.fluxo-receita,
+.parceiros-chave,
+.atividade-chave,
+.recursos-chave,
+.proposta-de-valor,
+.relacionamento-clientes,
+.canais,
+.segmentos-de-clientes {
+  padding-bottom: 20px;
+}
