@@ -8,7 +8,7 @@ function organizeHeight(el) {
       }
       if ((index + 1) == $('.first-row').children().length) {
         console.log(maiorAltura);
-        $('.first-row > div').animate({'min-height': maiorAltura}, 500);
+        $('.first-row > div').animate({'min-height': maiorAltura}, 200);
       }
     });
   } else if ( $(el).parents('.second-row').length == 1 ) {
@@ -20,7 +20,7 @@ function organizeHeight(el) {
       }
       if ((index + 1) == $('.second-row').children().length) {
         console.log(maiorAltura);
-        $('.second-row > div').animate({'min-height': maiorAltura}, 500);
+        $('.second-row > div').animate({'min-height': maiorAltura}, 200);
       }
     });
   }

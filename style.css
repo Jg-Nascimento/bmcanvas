@@ -5246,10 +5246,11 @@ section.board {
   min-height: 305px;
   position: relative;
   box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.2);
-  margin-bottom: 30px;
   background: #FAFAFA;
   border: 1px solid #cdcdcd;
   border-top: 2px solid #333; }
+  .col-peq:first-child {
+    margin-bottom: 30px; }
 
 .estrutura-custo,
 .fluxo-receita {
@@ -5399,7 +5400,7 @@ h1.title-board {
   width: 588px; }
 
 /* MODIFICADO POR MÁRIO VALNEY */
-.fist-row,
+.first-row,
 .second-row {
   overflow: hidden;
   padding-top: 10px; }
